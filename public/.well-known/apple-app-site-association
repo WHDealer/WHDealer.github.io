@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "4P9ZT5X793.ai.boot.HerzBegleiter"
+        ],
+        "components": [
+          {
+            "/": "/verify-email/*"
+          },
+          {
+            "/": "/recovery/*"
+          }
+        ]
+      }
+    ]
+  }
+}

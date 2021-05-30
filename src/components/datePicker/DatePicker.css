@@ -1,0 +1,10 @@
+.my-date-picker[readonly] {
+  width: 130px;
+  cursor: pointer;
+  background-color: white;
+  margin: 0 10px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}

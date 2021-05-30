@@ -1,0 +1,509 @@
+.profile {
+  &Wrapper {
+    margin: 0 20px !important;
+  }
+  &Container {
+    @media screen and (max-width: 860px) {
+      & > div {
+        max-width: initial;
+        width: 100%;
+        flex: initial;
+        &:first-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+.title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 34px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 62px;
+  color: #fff;
+  @media screen and (max-width: 860px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &.bioTitle {
+    color: var(--nightblue-100);
+  }
+}
+.leftWrapper {
+  padding: 30px;
+  height: 486px;
+  background: linear-gradient(134.96deg, #99bfc6 6.62%, #ccdfe3 93.59%);
+  box-shadow: 0px 3px 8px rgba(0, 95, 113, 0.05);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 860px) {
+    padding: 20px;
+    height: auto;
+    flex-direction: row;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+  .userName {
+    margin-bottom: 34px;
+    width: 100%;
+    text-align: center;
+    @media screen and (max-width: 860px) {
+      margin-bottom: 0;
+      max-width: calc(100% - 220px);
+      text-align: left;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 24px;
+      max-width: 100%;
+      text-align: center;
+    }
+    & > p {
+      font-size: 27px;
+      line-height: 31px;
+      color: var(--nightblue-100);
+      margin-bottom: 6px;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .avatarArea {
+    width: 100%;
+    text-align: center;
+    @media screen and (max-width: 860px) {
+      width: 200px;
+      text-align: right;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .avatarUser {
+    display: inline-block;
+    max-width: 100%;
+    width: 240px;
+    height: 240px;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    @media screen and (max-width: 992px) {
+      width: 210px;
+      height: 210px;
+    }
+    @media screen and (max-width: 900px) {
+      width: 190px;
+      height: 190px;
+    }
+    @media screen and (max-width: 860px) {
+      width: 100px;
+      height: 100px;
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .avatarUserButtonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .avatarUserButton {
+      font-weight: 500;
+      font-size: 15px;
+      margin: 36px 0px;
+      cursor: pointer;
+      height: 44px;
+      padding: 8px 16px !important;
+      @media screen and (max-width: 860px) {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+.formContainer {
+  margin: 0 0 60px;
+  & > div {
+    padding: 30px;
+    @media screen and (max-width: 480px) {
+      padding: 20px;
+    }
+  }
+}
+.form {
+  & > div:last-child {
+    margin-bottom: 0;
+  }
+}
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.wrapperTitle {
+  padding: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .cardTitle {
+    font-weight: 500;
+    font-size: 27px;
+    color: var(--nightblue-100);
+    text-align: left;
+    @media screen and (max-width: 360px) {
+      font-size: 24px;
+    }
+  }
+
+  .wrapperBtn {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .btnSubmit {
+      height: 36px;
+      padding: 8px 16px !important;
+      font-weight: 500;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.genderGroup {
+  margin-bottom: 30px;
+}
+
+.btnNurse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  background-color: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  .contentNurse {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    max-width: calc(100% - 40px);
+    font-size: 16px;
+    font-weight: 500;
+    @media screen and (max-width: 480px) {
+      width: auto;
+    }
+    .uploadDocument {
+      margin-right: 16px;
+      width: 42px;
+      height: 42px;
+      background: var(--petrol-5);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: var(--nightblue-100);
+    }
+    & > span {
+      max-width: calc(100% - 58px);
+    }
+  }
+  .iconArrowNurse {
+    width: 30px;
+    height: 30px;
+    background: var(--petrol-5);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--nightblue-100);
+  }
+}
+
+.modalBody {
+  border: none;
+  .modalBioTitle {
+    background: #ccdfe3;
+    border-radius: 24px 24px 0px 0px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--nightblue-100);
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .mobdalBioBody {
+    background: #ffffff;
+    border-radius: 0px 0px 16px 16px;
+    font-size: 13px;
+    color: var(--nightblue-90);
+    text-align: left;
+  }
+  border-radius: 25px 25px 16px 16px;
+}
+
+.wrapperBtn {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-start;
+  .btnEdit {
+    height: 36px;
+    padding: 8px 16px !important;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.gender {
+  display: flex;
+  flex-wrap: wrap;
+  .btnGender {
+    margin: 0 8px 8px 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.inputText {
+  padding: 13px 20px;
+  background-color: #fff;
+  color: var(--petrol-100);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  height: 51px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.inputText:focus {
+  background-color: #fff;
+  color: var(--petrol-100);
+  border-radius: 10px;
+  border: 1px solid var(--petrol-100) !important;
+  box-shadow: var(--petrol-100);
+  height: 51px;
+}
+.inputText[type='text']:disabled {
+  background: var(--petrol-5);
+  border: 1px solid var(--petrol-10);
+  color: var(--petrol-20);
+  //opacity: 0.5;
+}
+.inputText::-webkit-input-placeholder {
+  color: var(--petrol-100);
+  opacity: 0.5;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--nightblue-100);
+  margin-bottom: 8px;
+}
+
+.dataOfBirth {
+  .date {
+    display: flex;
+    .valueDate {
+      background: #ffffff;
+      border-radius: 10px;
+      margin-right: 8px;
+      width: 100%;
+      height: 49px;
+      font-weight: 500;
+      font-size: 13px;
+      color: var(--petrol-100);
+      display: flex;
+      align-items: center;
+      padding: 13px 20px;
+      font-size: 13px;
+    }
+    .valueDateDisable {
+      background: var(--petrol-5);
+      border: 1px solid var(--petrol-10);
+      color: var(--petrol-20);
+      border-radius: 10px;
+      margin-right: 8px;
+      width: 100%;
+      height: 49px;
+      font-weight: 500;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      padding: 13px 20px 14px;
+      font-size: 15px;
+    }
+    .iconDate {
+      width: 49px;
+      height: 49px;
+      background: #ffffff;
+      border-radius: 8px;
+      color: var(--petrol-100);
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.changePasswordUser {
+  margin: 30px auto;
+  max-width: calc(100% - 32px);
+
+  .cardWrapper {
+    margin: 0 auto;
+    max-width: 740px;
+    padding: 0 10px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 8px rgba(0, 95, 113, 0.05);
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #fff;
+    @media screen and (max-width: 860px) {
+      max-width: calc(100% - 32px);
+      width: 100%;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+  .cardBody {
+    padding: 0;
+    border: 1px solid #fff;
+  }
+  .inputPassword {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+    .inputTextPassword {
+      background-color: var(--petrol-5);
+      color: var(--petrol-100);
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      //border: 1px solid var(--petrol-80);
+      height: 51px;
+      border: none;
+    }
+
+    .inputTextPassword:focus {
+      background-color: var(--petrol-5);
+      color: var(--petrol-100);
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    .inputTextPassword:invalid {
+      border: 1px solid var(--petrol-80);
+    }
+
+    .iconPassword {
+      position: absolute;
+      right: calc(0.375em + 0.1875rem);
+      top: 44px;
+      font-size: 20px;
+      color: var(--petrol-100);
+      cursor: pointer;
+    }
+    .invalidFeedBack {
+      color: var(--violet-100);
+    }
+  }
+  .submit {
+    margin-top: 10px;
+    height: 51px;
+    padding: 0 20px !important;
+    border-radius: 16px;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
+
+.bioContainer {
+  @media screen and (max-width: 860px) {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+.bioButton {
+  max-width: calc(50% - 5px);
+  width: 124px;
+  height: 51px;
+}
+
+.bioWrapper {
+  margin: 30px 0;
+  background: #ecf1f5;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--nightblue-100);
+}
+
+.bio {
+  background: #ecf1f5;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--nightblue-100);
+  padding: 24px;
+  resize: none;
+  border: none;
+}
+
+.bio:focus {
+  background: #ecf1f5;
+  color: var(--nightblue-100);
+}
+.btnWrapper {
+  margin: 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnGroupWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    & > div {
+      max-width: calc(50% - 5px);
+    }
+  }
+}

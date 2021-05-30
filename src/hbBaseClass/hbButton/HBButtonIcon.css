@@ -1,0 +1,7 @@
+.hb-btn-icon:hover {
+  opacity: 0.8;
+}
+
+.hb-btn-icon.disabled {
+  opacity: 0.5;
+}

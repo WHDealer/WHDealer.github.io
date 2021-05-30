@@ -1,0 +1,203 @@
+.title {
+  font-size: 34px;
+  @media screen and (max-width: 480px) {
+    font-size: 31px;
+  }
+}
+.menuWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 52px 0 21px;
+  width: 100%;
+  @media screen and (max-width: 860px) {
+    width: 100%;
+    margin-top: 48px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 17px;
+  }
+}
+
+.content {
+  &Wrapper {
+    padding: 30px 30px 0;
+    @media screen and (max-width: 480px) {
+      margin: 0;
+      padding: 20px;
+    }
+  }
+  &Title {
+    margin: 0 0 24px;
+    @media screen and (max-width: 480px) {
+      margin: 0 0 8px;
+    }
+  }
+  &Trainer {
+    margin-bottom: 55px;
+    padding: 0;
+    width: 100%;
+    @media screen and (max-width: 480px) {
+      margin-bottom: 33px;
+    }
+  }
+}
+.menuScroll {
+  & > div {
+    & > div {
+      & > div {
+        &:first-child {
+          & > div {
+            margin-left: 0;
+          }
+        }
+        &:last-child {
+          & > div {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.item {
+  margin: 0 15px;
+  width: 153px;
+  @media screen and (max-width: 860px) {
+    margin: 0 10px;
+    width: 162px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 154px;
+  }
+  & > div {
+    padding: 10px 16.5px;
+    height: 205px !important;
+    @media screen and (max-width: 860px) {
+      padding: 10px 26px;
+      height: 194px !important;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 10px 22px;
+    }
+    & > div > div {
+      &:first-child {
+        height: 120px !important;
+        @media screen and (max-width: 860px) {
+          height: 110px !important;
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        height: 16px;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.listVideos {
+  padding: 0 !important;
+}
+.bibliothek {
+  display: flex;
+  align-items: center;
+  padding: 6px 15px;
+  color: #fff;
+  background: var(--violet-80);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  border-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  @media screen and (max-width: 360px) {
+    font-size: 12px;
+  }
+}
+.bibliothek:hover {
+  background: var(--violet-100);
+}
+.tippy {
+  width: 203px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 7px 16px;
+  position: relative;
+  filter: drop-shadow(0px 5px 20px rgba(0, 95, 113, 0.15));
+
+  .tippyItem {
+    color: var(--violet-120);
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 9px 0;
+
+    div {
+      width: 27px;
+      height: 27px;
+      background: var(--violet-40);
+      border-radius: 50%;
+      margin-right: 8px;
+      font-weight: 500;
+      font-size: 11px;
+      color: var(--violet-120);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .arrow,
+  .arrow::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -8px;
+    right: 40px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+  }
+}
+
+.btnVideoFilter {
+  @media screen and (max-width: 360px) {
+    font-size: 12px;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .headerBtn {
+    width: 140px;
+    height: 35px;
+    button {
+      border: 1px solid;
+    }
+  }
+
+  .allTrainers {
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: var(--violet-100);
+    border: 1px solid var(--violet-100);
+    cursor: pointer;
+  }
+
+  .allTrainers:hover {
+    color: var(--violet-60);
+    border: 1px solid var(--violet-60);
+  }
+}

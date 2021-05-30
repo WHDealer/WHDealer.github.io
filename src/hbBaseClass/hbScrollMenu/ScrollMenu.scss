@@ -1,0 +1,13 @@
+.hb-scroll-menu-categories-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 52px 0 21px;
+  width: 100%;
+  @media screen and (max-width: 860px) {
+    width: 100%;
+    margin-top: 48px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 17px;
+  }
+}

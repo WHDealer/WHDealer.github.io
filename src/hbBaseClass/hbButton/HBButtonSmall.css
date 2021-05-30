@@ -1,0 +1,108 @@
+.hb-btn-small {
+  font-size: 13px;
+  padding: 0 15px;
+  height: 36px;
+  font-weight: 500;
+  line-height: 13px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+}
+
+.hb-btn-small-color {
+  font-size: 13px;
+  padding: 0 15px;
+  height: 36px;
+  font-weight: 500;
+  line-height: 13px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+}
+
+.hb-btn-small:focus,
+.hb-btn-small-color:focus {
+  outline: none;
+}
+
+.petrol .hb-btn-small,
+.hb-btn-small-petrol {
+  background: var(--petrol-80);
+  color: #fff;
+}
+
+.petrol .hb-btn-small:hover,
+.hb-btn-small-petrol:hover {
+  background: var(--aquamarin-100);
+  color: #fff;
+}
+
+.petrol .hb-btn-small:focus,
+.hb-btn-small-petrol:focus {
+  background: var(--petrol-80);
+  border-color: var(--aquamarin-80);
+  color: #fff;
+}
+
+.petrol .hb-btn-small:active,
+.hb-btn-small-petrol:active,
+.hb-btn-small-petrol.is-selected {
+  background: var(--aquamarin-60);
+  border-color: var(--aquamarin-80);
+  color: var(--petrol-100);
+}
+
+.petrol .hb-btn-small[disabled],
+.hb-btn-small-petrol[disabled] {
+  background: var(--petrol-80);
+  opacity: 0.5;
+}
+
+.petrol .hb-btn-small.light[disabled],
+.hb-btn-small-petrol.light[disabled] {
+  background: var(--petrol-80);
+  opacity: 1;
+}
+
+.violet .hb-btn-small,
+.hb-btn-small-violet {
+  background: var(--violet-80);
+  color: #fff;
+}
+
+.violet .hb-btn-small:hover,
+.hb-btn-small-violet:hover {
+  background: var(--violet-100);
+}
+
+.violet .hb-btn-small:focus,
+.hb-btn-small-violet:focus {
+  background: var(--violet-120);
+  border-color: var(--violet-60);
+}
+
+.violet .hb-btn-small:active,
+.hb-btn-small-violet:active {
+  background: var(--violet-60);
+}
+
+.violet .hb-btn-small[disabled],
+.hb-btn-small-violet[disabled] {
+  background: var(--violet-80);
+  opacity: 0.5;
+}
+
+.hb-btn-small-nightblue {
+  background: var(--nightblue-20);
+  color: var(--nightblue-100);
+}
+
+.hb-btn-small-nightblue:hover {
+  background: var(--nightblue-50);
+}

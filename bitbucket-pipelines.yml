@@ -1,0 +1,47 @@
+options:
+  docker: true
+  size: 2x
+
+clone:
+  depth: full
+
+definitions:
+  services:
+    docker:
+      memory: 2048
+
+  caches:
+    sonar: ~/.sonar/cache  # Caching SonarCloud artifacts will speed up your build
+
+  steps:
+  - step: &build-test-sonarcloud
+      name: Build, test and analyze on SonarCloud
+      caches:
+        - sonar
+      script:
+        - pipe: sonarsource/sonarcloud-scan:1.2.1
+          variables:
+            EXTRA_ARGS: -Dsonar.c.file.suffixes=- -Dsonar.cpp.file.suffixes=- -Dsonar.objc.file.suffixes=- -Dsonar.projectVersion=1.0 -Dsonar.sourceEncoding=UTF-8
+
+  - step: &check-quality-gate-sonarcloud
+      name: Check the Quality Gate on SonarCloud
+      script:
+        - pipe: sonarsource/sonarcloud-quality-gate:0.1.4
+
+pipelines:
+  branches:
+    feature/*:
+      - step: *build-test-sonarcloud
+      - step: *check-quality-gate-sonarcloud
+    master:
+      - step: *build-test-sonarcloud
+      - step: *check-quality-gate-sonarcloud
+    develop:
+      - step: *build-test-sonarcloud
+      - step: *check-quality-gate-sonarcloud
+
+  pull-requests:
+    '**':
+      - step: *build-test-sonarcloud
+      - step: *check-quality-gate-sonarcloud
+      

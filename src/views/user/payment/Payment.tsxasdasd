@@ -1,0 +1,73 @@
+import { CButton } from '@coreui/react';
+import React, { useEffect, useState } from 'react';
+import config from '../../../config';
+import { Container } from '../../../theme/styles';
+import { spacing } from '../../../theme';
+import { APICode } from '../../admin/settings/constants';
+import { callApiAction } from '../../../store/callApi/actions';
+import { useDispatch } from 'react-redux';
+import { RouteComponentProps } from 'react-router-dom';
+
+const Payment: React.FC<RouteComponentProps> = () => {
+  const dispatch = useDispatch();
+  const [orderDetail, setOrderDetail] = useState<any>({});
+  const [showForm, setShowForm] = useState(false);
+
+  const callApi = (payload: any, callback: any) => dispatch(callApiAction(payload, callback));
+
+  const getOrderDetail = async () => {
+    callApi(
+      {
+        method: 'get',
+        api: config.rest.paymentOrderDetail(),
+      },
+      (response: any) => {
+        if (response?.code === APICode.Success) {
+          setShowForm(true);
+          setOrderDetail(response?.data);
+        }
+      },
+    );
+  };
+
+  useEffect(() => {
+    if (showForm) {
+      var checkoutContainer: any = document.getElementById('my-checkout-container') as HTMLDivElement;
+      checkoutContainer.innerHTML = (document.getElementById('KCO') as HTMLTextAreaElement)?.value
+        ?.replace(/\\"/g, '"')
+        ?.replace(/\\n/g, '');
+      var scriptsTags = checkoutContainer.getElementsByTagName('script');
+      for (var i = 0; i < scriptsTags.length; i++) {
+        var parentNode = scriptsTags[i].parentNode;
+        var newScriptTag = document.createElement('script');
+        newScriptTag.type = 'text/javascript';
+        newScriptTag.text = scriptsTags[i].text;
+        parentNode.removeChild(scriptsTags[i]);
+        parentNode.appendChild(newScriptTag);
+      }
+    }
+  }, [orderDetail]);
+
+  return (
+    <Container>
+      {showForm ? (
+        <div>
+          <textarea
+            style={{ display: 'none' }}
+            id="KCO"
+            defaultValue={orderDetail?.html_snippet}
+            value={orderDetail?.html_snippet}
+          ></textarea>
+
+          <div id="my-checkout-container"></div>
+        </div>
+      ) : (
+        <CButton color="danger" className="px-4" onClick={getOrderDetail} style={{ margin: spacing[4] }}>
+          Payment now
+        </CButton>
+      )}
+    </Container>
+  );
+};
+
+export default Payment;

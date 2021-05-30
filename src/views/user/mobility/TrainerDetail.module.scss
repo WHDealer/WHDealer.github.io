@@ -1,0 +1,175 @@
+.trainerDetail {
+  margin: 26px 20px;
+  .trainerDetailWrapper {
+    @media screen and (max-width: 860px) {
+      flex-direction: column;
+      & > div {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .videoWrapper {
+    max-height: 480px;
+    min-height: 340px;
+    @media screen and (max-width: 480px) {
+      min-height: 250px;
+    }
+  }
+  .card {
+    margin-bottom: 0;
+    background: #ffffff;
+    /* Subtleshadow */
+
+    box-shadow: 0px 3px 8px rgba(0, 95, 113, 0.05);
+    border-radius: 24px;
+    border: none;
+    @media screen and (max-width: 860px) {
+      margin-top: 16px;
+    }
+    .cardBody {
+      padding: 20px;
+      @media screen and (max-width: 860px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      border-top: 1px solid #ecf1f5;
+      & > div {
+        align-items: center;
+      }
+    }
+  }
+  .avatar {
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    @media screen and (max-width: 1028px) {
+      width: 200px;
+      height: 200px;
+    }
+    @media screen and (max-width: 860px) {
+      margin: 0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .userName {
+    min-height: 62px;
+    @media screen and (max-width: 860px) {
+      max-width: calc(100% - 120px);
+      flex-grow: 1;
+    }
+    @media screen and (max-width: 860px) {
+      max-width: calc(100% - 100px);
+    }
+    & > p {
+      margin-bottom: 0;
+      color: var(--nightblue-100);
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 31px;
+      text-align: center;
+      word-break: break-word;
+      @media screen and (max-width: 860px) {
+        margin: 0 !important;
+        text-align: left;
+      }
+      &:first-child {
+        margin-top: 46px;
+        @media screen and (max-width: 1028px) {
+          margin-top: 30px;
+        }
+      }
+      &:last-child {
+        margin-bottom: 26px;
+        @media screen and (max-width: 1028px) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .wrapperLeft {
+    max-width: calc(100% - 30px);
+    display: flex;
+    align-items: center;
+    .views {
+      padding: 4px 10px;
+      background: #e9daf2;
+      border-radius: 8px;
+      display: flex;
+      margin-right: 8px;
+      //   align-items: center;
+      span {
+        margin-left: 9px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: var(--nightblue-100);
+      }
+    }
+    .videos {
+      padding: 4px 10px;
+      background: #e9daf2;
+      border-radius: 8px;
+      display: flex;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: var(--nightblue-100);
+      //   align-items: center;
+      span {
+        margin-left: 9px;
+      }
+    }
+  }
+  .icon {
+    text-align: right;
+  }
+  .videosAmount {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 31px;
+    color: var(--nightblue-100);
+    margin: 30px 0 16px;
+  }
+}
+.descriptionTitle {
+  margin-top: 30px;
+}
+.descriptionContent {
+  margin-bottom: 0;
+}
+.videoPcDesc {
+  @media screen and (max-width: 860px) {
+    display: none;
+  }
+}
+.videoSmDesc {
+  display: none;
+  @media screen and (max-width: 860px) {
+    display: block;
+  }
+}
+.listVideosWrapper {
+  @media screen and (max-width: 860px) {
+    & > div {
+      max-width: 100%;
+      width: 100%;
+      flex: initial;
+    }
+  }
+}

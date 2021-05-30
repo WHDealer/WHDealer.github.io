@@ -1,0 +1,139 @@
+.inputText {
+  background-color: var(--petrol-80);
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  height: 51px;
+}
+
+.inputText:focus {
+  background-color: var(--petrol-80);
+  color: #fff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.inputText:-webkit-autofill,
+.inputText:-webkit-autofill:hover,
+.inputText:-webkit-autofill:focus,
+.inputText:-webkit-autofill,
+.inputText:-webkit-autofill:hover,
+.inputText:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: var(--petrol-80);
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: var(--petrol-80);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.email {
+  text-align: left;
+}
+
+.inputPassword {
+  margin-bottom: 8px;
+  position: relative;
+  text-align: left;
+  .inputTextPassword {
+    background-color: var(--petrol-80);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    height: 51px;
+  }
+
+  .inputTextPassword:focus {
+    background-color: var(--petrol-80);
+    color: #fff;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  // .inputTextP:invalid {
+  //   border: 1px solid var(--violet-80);
+  // }
+
+  .inputTextPassword:-webkit-autofill,
+  .inputTextPassword:-webkit-autofill:hover,
+  .inputTextPassword:-webkit-autofill:focus,
+  .inputTextPassword:-webkit-autofill,
+  .inputTextPassword:-webkit-autofill:hover,
+  .inputTextPassword:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    background-color: var(--petrol-80);
+    -webkit-text-fill-color: #ffffff;
+    -webkit-box-shadow: var(--petrol-80);
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  .iconPassword {
+    position: absolute;
+    right: calc(0.375em + 0.1875rem);
+    top: calc(28px - 0.5em);
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.forgotPassword {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  a {
+    color: var(--aquamarin-80);
+    cursor: pointer;
+  }
+}
+
+.btnSubmit {
+  width: 100%;
+  padding: 12px 0 !important;
+  border-radius: 12px !important;
+  font-weight: 500;
+  font-size: 15px !important;
+  margin: 16px 0px;
+}
+
+.createAccount {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.register_link {
+  color: var(--aquamarin-80);
+  margin-left: 8px;
+}
+
+// .inputGroupText {
+//   background: var(--petrol-80);
+//   border: 0;
+//   border-top-right-radius: 10px !important;
+//   border-bottom-right-radius: 10px !important;
+// }
+
+.header {
+  background: var(--petrol-100);
+  top: 0;
+  border: 0;
+  justify-content: center;
+  margin-top: 23px;
+}
+
+.cardTitle {
+  margin-bottom: 16px;
+  font-size: 34px;
+  line-height: 38px;
+  @media screen and (max-width: 480px) {
+    font-size: 31px;
+  }
+}
+
+.lastFormGroup {
+  margin-bottom: 0;
+}

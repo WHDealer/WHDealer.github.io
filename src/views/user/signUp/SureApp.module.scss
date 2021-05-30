@@ -1,0 +1,30 @@
+.wrapper {
+  .cardTitle {
+    font-size: 34px;
+    font-weight: 500;
+    @media screen and (max-width: 480px) {
+      font-size: 31px;
+    }
+  }
+  .content {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 16px 0;
+    font-weight: 400;
+  }
+  .image {
+    background: url('../../../assets/images/success_signup.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+    width: 100%;
+    margin: 16px 0;
+  }
+  .btnSubmit {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+}

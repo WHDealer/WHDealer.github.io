@@ -1,0 +1,22 @@
+.modal-view-documents-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.modal-view-documents-children {
+  font-size: medium;
+  margin-left: 1rem;
+}
+
+.modal-view-image-close-btn {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-view-image-close-btn:hover {
+  background-color: #313d52;
+}
