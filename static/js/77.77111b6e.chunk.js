@@ -1,0 +1,2 @@
+(this["webpackJsonphb-frontend"]=this["webpackJsonphb-frontend"]||[]).push([[77],{1203:function(n,t,e){"use strict";e.r(t);var i=e(4);e(1);t.default=function(n){return Object(i.jsx)("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"80vh",fontSize:30},children:"Consulting Management"})}}}]);
+//# sourceMappingURL=77.77111b6e.chunk.js.map

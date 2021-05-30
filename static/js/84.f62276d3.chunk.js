@@ -1,0 +1,2 @@
+(this["webpackJsonphb-frontend"]=this["webpackJsonphb-frontend"]||[]).push([[84],{1001:function(e,t,n){"use strict";n.r(t);var s=n(4),c=(n(1),n(53)),i=n(35);t.default=function(e){return Object(s.jsx)("div",{style:{height:80},children:Object(s.jsx)("div",{className:"hb-header no-border",children:Object(s.jsx)("div",{className:"d-flex justify-content-center align-items-center",style:{height:"100%"},children:Object(s.jsx)(c.a,{to:"/",children:i.f})})})})}}}]);
+//# sourceMappingURL=84.f62276d3.chunk.js.map

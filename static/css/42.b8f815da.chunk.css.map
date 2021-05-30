@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/views/admin/containers/Layout.scss"],"names":[],"mappings":"AAAA,2BAEI,kBAAmB,CACnB,eAAgB,CAChB,sBAAuB","file":"42.b8f815da.chunk.css","sourcesContent":[".hb-admin {\n  .ellipsis-1-line {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n  }\n}\n"]}
